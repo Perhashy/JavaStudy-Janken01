@@ -7,7 +7,7 @@ public class Main {
   player.setHand(2);
   computer.setHand(1);
 
-  System.out.println(player.getHand());
-  System.out.println(computer.getHand());
+  System.out.println(player.toString());
+  System.out.println(computer.toString());
   }
 }
