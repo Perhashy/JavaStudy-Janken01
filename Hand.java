@@ -1,16 +1,13 @@
 package Janken01;
 
 import java.util.Scanner;
+import java.util.Random;
 
 public class Hand {
   private int hand;
 
   public int getHand() {
     return this.hand;
-  }
-
-  public void setHand(int hand) {
-    this.hand = hand;
   }
 
   public void setPlayerHand() {
@@ -26,6 +23,11 @@ public class Hand {
       System.out.println("正しくない手を出しました、あなたの負けです");
       System.exit(0);
     }
+  }
+
+  public void setComputerHand(){
+    Random random = new Random();
+    this.hand = random.nextInt(3)+1;
   }
 
   @Override

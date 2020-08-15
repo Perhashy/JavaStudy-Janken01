@@ -7,7 +7,7 @@ public class Main {
 
     System.out.println("じゃんけんを始めます！");
     player.setPlayerHand();
-    computer.setHand(1);
+    computer.setComputerHand();
 
     System.out.println("あなた：" + player.toString());
     System.out.println("あいて：" + computer.toString());
