@@ -37,6 +37,7 @@ public class Hand {
       case 2: return "チョキ";
       case 3: return "パー";
     }
-    throw new IllegalStateException();
+    // throw new IllegalStateException();
+    return "問題が発生しました";
   }
 }
