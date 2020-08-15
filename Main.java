@@ -12,5 +12,6 @@ public class Main {
       System.out.println("あなた：" + player.toString());
       System.out.println("あいて：" + computer.toString());
     }while(Game.draw(player.getHand(), computer.getHand()));
+    Game.result(player.getHand(), computer.getHand());
   }
 }
