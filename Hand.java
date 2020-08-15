@@ -12,11 +12,12 @@ public class Hand {
 
   public void setPlayerHand() {
     Scanner sc = new Scanner(System.in);
-    System.out.println(
+    System.out.print(
       "手を数字で入力してください" + "\n" +
-      "1：グー、2：チョキ、3：パー"
+      "(1：グー、2：チョキ、3：パー)："
     );
     int playerHand = sc.nextInt();
+    System.out.println("--------------------------------");
     if (playerHand > 0 && playerHand <= 3) {
       this.hand = playerHand;
     } else {
@@ -33,9 +34,9 @@ public class Hand {
   @Override
   public String toString() {
     switch (this.hand) {
-      case 1: return "グー";
-      case 2: return "チョキ";
-      case 3: return "パー";
+      case 1: return "✊";
+      case 2: return "✌️";
+      case 3: return "✋";
     }
     // throw new IllegalStateException();
     return "問題が発生しました";
